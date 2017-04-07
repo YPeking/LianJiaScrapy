@@ -16,4 +16,7 @@ BaiduLocation.py gets the Location of House according to the name of cell or hou
 
 MeanOnMap.py Calculates the mean price of houses on the map;
 
+At last, use the mean price of houses, It can export a heatmap from http://developer.baidu.com/map/jsdemo.htm#c1_15;
+
+The result is as follows:
 
