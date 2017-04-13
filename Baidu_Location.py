@@ -11,7 +11,7 @@ def BaiduLocation():
 ##------------------------------------------------
     # 连接到数据库
     conn = pymysql.connect(host='127.0.0.1', unix_socket='/run/mysqld/mysqld.sock',\
-            user='root', passwd='yp705358', db = 'BeiJing', charset= "utf8")
+            user='root', passwd='mysql密码', db = 'BeiJing', charset= "utf8")
     cur = conn.cursor()
 
     sql = 'use BeiJing;'
@@ -44,7 +44,7 @@ def BaiduLocation():
     conn.close()
 
 def get_Location(address):
-    key = "d1MNsaxHAqZuqtw0HijK3veEUkQ92OZW"
+    key = "百度地图API key"
     addr = urllib.parse.quote(address)
     url = "http://api.map.baidu.com/geocoder/v2/?address=" + addr + "&output=json&ak=" + key + "&callback=showLocation"
     try:
