@@ -214,7 +214,7 @@ def getHouseInfo(url, table_name):
 
     # 连接数据库
     conn = pymysql.connect(host='127.0.0.1', unix_socket='/run/mysqld/mysqld.sock',\
-              user='root', passwd='yp705358', db = 'BeiJing', charset = "utf8")
+              user='root', passwd='mysql密码', db = 'BeiJing', charset = "utf8")
     cur = conn.cursor()
     cur.execute("use BeiJing;")
     conn.commit()
@@ -345,7 +345,7 @@ if __name__ == '__main__':
         name = url.split('/')
         # 连接数据库,并判断表是否为空，若不为空跳过
         conn = pymysql.connect(host='127.0.0.1', unix_socket='/run/mysqld/mysqld.sock',\
-              user='root', passwd='yp705358', db = 'BeiJing', charset= "utf8")
+              user='root', passwd='mysql密码', db = 'BeiJing', charset= "utf8")
         cur = conn.cursor()
         cur.execute("use BeiJing;")
         conn.commit()
